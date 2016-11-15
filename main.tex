@@ -1,0 +1,281 @@
+\documentclass[a4paper,12pt]{report}
+
+
+\usepackage[protrusion=true,expansion=true]{microtype}
+
+\usepackage[utf8]{inputenc}   
+\usepackage[T1]{fontenc}
+\usepackage[french]{babel}  
+\usepackage[pdftex]{graphicx}
+\usepackage{indentfirst}
+
+\usepackage{pdfpages}
+
+\usepackage{lettrine} % The lettrine is the first enlarged letter at the beginning of the text
+%\usepackage[sc]{mathpazo} % Use the Palatino font
+%\usepackage[condensed,math]{iwona} %////////////////
+%\usepackage{inconsolata}
+%\renewcommand*\familydefault{\ttdefault}
+%\usepackage{kpfonts}
+%\usepackage[scaled=1.05,proportional,lightcondensed]{zlmtt}
+%\usepackage[default]{comfortaa}
+%\usepackage[default]{gfsneohellenic} %////////////////
+%\usepackage{ascii}
+%\usepackage[default]{comfortaa}
+%\usepackage{lmodern}
+%\usepackage{mathpazo}
+%\usepackage{kpfonts} %////////////
+%\usepackage{mathptmx}
+%\usepackage{times,mtpro2}
+%\usepackage{stix}
+%\usepackage{txfonts}
+%\usepackage{newtxtext,newtxmath}
+%\usepackage{libertine} 
+%\usepackage[libertine]{newtxmath}
+%\usepackage[scaled=0.85]{luximono}
+%\usepackage{arev}
+%\usepackage[default]{cantarell} %% Use option "defaultsans" to use cantarell as sans serif only 
+%\usepackage{DejaVuSans} %///////////////////:
+%\usepackage{PTSansCaption} 
+%\renewcommand*\familydefault{\sfdefault} %% Only if the base font of the document is to be sans serif
+%\usepackage{venturisold}
+%\usepackage{tgschola} %//////////////////////
+\usepackage[math]{kurier}
+%\usepackage[avantgarde]{quotchap}
+% \usepackage[sfdefault,condensed]{cabin}
+
+\usepackage{tabularx}
+
+\usepackage{pgf,pgfarrows,pgfnodes,pgfautomata,pgfheaps,pgfshade}
+\usepackage{verbatim}
+\usepackage[hang, small,labelfont=bf,up,textfont=it,up]{caption} % Custom captions under/above floats in tables or figures
+%\usepackage[colorlinks=true,linkcolor=blue]{hyperref} % For hyperlinks in the PDF
+
+\definecolor{color1}{RGB}{56,115,178}
+\definecolor{color2}{RGB}{115,115,115}
+
+\usepackage[pdftex=true,hyperindex=true,colorlinks=true,linkcolor=color1]{hyperref}
+
+%\usepackage{paralist} % Used for the compactitem environment which makes bullet points with less space between them
+\usepackage{abstract} % Allows abstract customization
+\renewcommand{\abstractnamefont}{\normalfont\bfseries} % Set the "Abstract" text to bold
+\renewcommand{\abstracttextfont}{\normalfont\small\itshape} % Set the abstract itself to small italic text
+
+%Options: Sonny, Lenny, Glenn, Conny, Rejne, Bjarne, Bjornstrup
+\usepackage[Lenny]{fncychap}
+
+
+
+\usepackage{verbatim}
+\usepackage{fancyhdr}
+
+\usepackage{setspace}
+\usepackage{numprint}
+\usepackage{graphicx}
+%preamble
+\usepackage[nottoc]{tocbibind}
+
+\frenchbsetup{StandardLists=true} % à inclure si on utilise \usepackage[french]{babel}
+\usepackage{enumitem}
+
+\usepackage{amsmath,amsfonts,amssymb}
+
+\pagestyle{fancy}
+
+%\linespread{1.5}
+
+
+
+
+\usepackage[french]{algorithm2e}
+%\usepackage{algpseudocode,algorithm}
+%\floatname{algorithm}{Procedure}
+%\renewcommand{\algorithmicrequire}{\textbf{Input:}}
+%\renewcommand{\algorithmicensure}{\textbf{Output:}}
+%\usepackage{setspace}
+
+
+\usepackage{titlesec} % Allows customization of titles
+%\renewcommand\thesection{\Roman{section}} % Roman numerals for the sections
+%\renewcommand\thesubsection{\Roman{subsection}} % Roman numerals for subsections
+%\titleformat{\chapter}[farme]{\scshape\huge\bfseries\bf}{\chaptertitlename\ \thechapter}{2em}{} % Change the look of the section titles
+%\titleformat{\chapter}[block]{\scshape\bfseries}{}{}{}
+
+
+
+
+%\usepackage{pslatex}
+
+
+
+%\usepackage{pifont}
+\usepackage{color}
+\usepackage{colortbl}
+\usepackage{listings}
+\usepackage{listingsutf8}
+
+\usepackage[french]{minitoc}
+
+\usepackage{multirow}
+%\usepackage{marvosym}
+%\usepackage{textcomp}
+\usepackage{lastpage}
+
+
+%\usepackage{nopageno}
+%\usepackage{slantsc}
+%\usepackage{array}
+%\usepackage{amsmath}
+
+
+%\usepackage{lipsum}
+
+
+
+
+
+%\nomtcrule
+%\renewcommand{\ptctitle}{\scshape}
+%\tightmtctrue
+%\nomtcpagenumbers
+
+
+
+
+\titleformat{\section}[block]{\Large\scshape\bfseries}{\thesection.}{1em}{} % Change the look of the section titles
+\titleformat{\subsection}[block]{\large\scshape\bfseries}{\thesubsection.}{2em}{} % Change the look of the section titles
+\titleformat{\subsubsection}[block]{\normalsize\scshape\bfseries}{\thesubsubsection.}{3em}{}
+% % % % % % % % % % % % % % % % % % % % % % % % % %
+%\pagestyle{empty}
+%\setlength{\textwidth}{7in}
+%\setlength{\textheight}{9.125in}
+%\setlength{\columnsep}{0.5in}
+%\setlength{\topmargin}{-0.8in}
+%\setlength{\oddsidemargin}{-0.25in}
+%\setlength{\parindent}{5ex}   
+
+% % % % % % % % % % % % % % % % % % % % % % % % % % %
+\setlength{\hoffset}{-0pt}    %//////////////////////////    
+\setlength{\oddsidemargin}{15pt} % Marge gauche sur pages impaires %/////////////////////
+%\setlength{\evensidemargin}{9pt} % Marge gauche sur pages paires
+\setlength{\marginparwidth}{0pt} % Largeur de note dans la marge
+\setlength{\textwidth}{420pt} % Largeur de la zone de texte (17cm) %//////////////////
+%\setlength{\voffset}{-18pt} % Bon pour DOS
+\setlength{\marginparsep}{0pt} % Séparation de la marge
+\setlength{\headwidth}{420pt}
+%\setlength{\topmargin}{0pt} % Pas de marge en haut
+%\setlength{\headheight}{13pt} % Haut de page
+%\setlength{\headsep}{10pt} % Entre le haut de page et le texte
+%\setlength{\footskip}{27pt} % Bas de page + séparation
+%\setlength{\textheight}{615pt} % Hauteur de la zone de texte (25cm) %/////////////
+      
+
+%\title{Gestion des consommations d’énergie dans\\ les Clouds Computing}
+\title{\vspace{-15mm}\fontsize{24pt}{10pt}\selectfont\textbf{Gestion de la consommation d’énergie\\ dans le Cloud Computing}} % Article title
+%\author{ \textit{\textbf{YAGOUBI Djamel Eddine}} }
+%\date{1 Avril 2014}
+\author{
+\large
+\textsc{YAGOUBI Djamel Edine}\thanks{YAGOUBI Djamel Edine avec \textbf{\LaTeX}}\\[2mm] % Your name
+\normalsize \textsc{Université D'Oran} \\ % Your institution
+\normalsize \href{mailto:yagoubi.djamel@gmail.com}{Yagoubi.djamel@gmail.com} % Your email address
+\vspace{-5mm}
+}
+\date{1 Avril 2014}
+
+
+\setcounter{secnumdepth}{3}
+\setcounter{tocdepth}{3}
+
+\begin{document}
+ 
+%\pagestyle{headings} 
+%\fancyhead[R]{}
+%\fancyfoot[]{\leftmark }
+%\pagestyle{fancy}
+
+
+
+%\renewcommand{\footrulewidth}{1pt}
+
+% % % % % % % % % % % % % % % % % % % % % % % % % % % % %
+
+\fancyhead{}
+
+\renewcommand{\headrule}
+{%
+\hrule width\headwidth height\headrulewidth \vskip-\headrulewidth}
+
+\fancyhead[EL,OL]
+{\textsl{\rightmark}}
+\fancyhead[ER,OR]
+{\subsectionmark{\leftmark}}
+
+\fancyfoot{} 
+\fancyfoot[RO,RE]
+{{\bfseries\ Page}
+{\textbar} 
+\bfseries\textbf{\thepage}
+}
+
+\fancyfoot[LO,LE]
+{\sectionmark}
+
+\fancyfoot[L]{\tiny  Réalisé par {\bf \footnotesize \sc YAGOUBI Djamel Edine} à l’aide du logiciel de composition typographique \scriptsize \LaTeX}
+
+\renewcommand{\footrule}{{%
+\vskip-\footruleskip\vskip-\footrulewidth
+\hrule  \headwidth  \footrulewidth  \vskip \footruleskip}}
+
+% % % % % % % % % % % % % % % % % % % % % % % % % % % % %
+
+
+
+%\maketitle
+
+\includepdf[pages = -]{PageDeGard/PageDeGard}
+
+
+
+\pagenumbering{Roman}
+
+
+
+\dominitoc
+
+\input{chapitres/Decidace}
+%\addcontentsline{toc}{chapter}{Dédicace}
+\clearpage
+\input{chapitres/Remerciments}
+%\addcontentsline{toc}{chapter}{Remerciements}
+\clearpage
+
+\includepdf[pages = -]{Abstract/Abstract}
+
+\clearpage
+
+
+
+\input{chapitres/Intro}
+
+
+\tableofcontents
+
+
+\pagenumbering{arabic}
+\input{chapitres/chapitre1}
+\input{chapitres/chapitre2}
+\input{chapitres/chapitre3}
+\input{chapitres/chapitre4}
+\clearpage
+\input{chapitres/Conclu}
+\listoffigures
+\listoftables
+\listofalgorithms
+\bibliographystyle{alpha} % Le style est mis entre accolades.
+%\bibliographystyle{abbrv}
+\bibliography{bibli/bibli} % mon fichier de base de données s'appelle bibli.bib
+    
+%\renewcommand{\thefootnote}{\Alph{footnote}}
+
+\end{document}
